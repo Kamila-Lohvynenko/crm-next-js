@@ -1,0 +1,19 @@
+@use '../../styles/functions' as fn;
+@use '../../styles/variables' as var;
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 4px 14px;
+
+  border-radius: 28px;
+}
+
+@each $value in 'active', 'notActive', 'pending', 'suspended' {
+  .#{$value} {
+    color: fn.get-color($value);
+    background-color: fn.get-color(#{$value}-bg);
+  }
+}
