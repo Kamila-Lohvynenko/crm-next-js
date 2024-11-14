@@ -1,3 +1,16 @@
+@use '../../styles/functions' as fn;
+@use '../../styles/placeholders' as *;
+
 .button {
-  font-size: 12px;
+  @extend %button-link-text;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 20px;
+
+  color: fn.get-color('light');
+  background-color: fn.get-color('dark');
 }
