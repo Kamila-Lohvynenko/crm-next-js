@@ -1,0 +1,47 @@
+@use '../../styles/mixins' as mx;
+
+.icon {
+  width: 14px;
+  height: 14px;
+
+  fill: black;
+  stroke: black;
+}
+
+.overlay {
+  @include mx.flex-center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  background-color: rgba(47, 47, 47, 0.6);
+}
+.modal {
+  z-index: 1001;
+}
+.modalContent {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.closeButton {
+  @include mx.flex-center;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  z-index: 102;
+}
+.icon {
+  width: 28px;
+  height: 28px;
+}

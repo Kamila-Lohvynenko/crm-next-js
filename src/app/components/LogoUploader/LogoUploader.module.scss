@@ -1,0 +1,19 @@
+@use '../../styles/functions' as fn;
+@use '../../styles/variables' as var;
+@use '../../styles/placeholders' as *;
+@use '../../styles/mixins' as mx;
+
+.label {
+  @include mx.flex-center($column: true);
+
+  width: 308px;
+  height: 184px;
+
+  border-radius: 4px;
+  border: 1px dashed #0f172a;
+  background-color: fn.get-color('light');
+}
+
+.hidden {
+  @extend %hidden;
+}

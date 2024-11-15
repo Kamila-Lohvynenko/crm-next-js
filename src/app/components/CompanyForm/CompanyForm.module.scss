@@ -1,0 +1,23 @@
+@use '../../styles/mixins' as mx;
+
+.form {
+  @include mx.flex-center($column: true);
+
+  width: 700px;
+  height: 680px;
+  padding: 28px;
+  overflow-y: scroll;
+
+  margin: auto;
+
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
+.title {
+  color: #111827;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 140% */
+}

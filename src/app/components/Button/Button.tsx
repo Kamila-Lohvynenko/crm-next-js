@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Button.module.scss';
 import clsx from 'clsx';
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
   disabled?: boolean;
 }
