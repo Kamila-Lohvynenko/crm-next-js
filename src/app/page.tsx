@@ -1,5 +1,6 @@
-import AddCompanyButton from './components/AddCompanyButton/AddCompanyButton';
-import StatusLabel, { Status } from './components/StatusLabel/StatusLabel';
+// import AddCompanyButton from "./components/AddCompanyButton/AddCompanyButton";
+// import LogoUploader from "./components/LogoUploader/LogoUploader";
+import StatusLabel, { Status } from "./components/StatusLabel/StatusLabel";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <StatusLabel status={Status.NotActive}>Not Active</StatusLabel>
       <StatusLabel status={Status.Pending}>Pending</StatusLabel>
       <StatusLabel status={Status.Suspended}>Suspended</StatusLabel>
-      <AddCompanyButton />
+      {/* <LogoUploader label="Logo" placeholder="Upload photo" /> */}
     </div>
   );
 }

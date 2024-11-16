@@ -1,0 +1,11 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+
+body {
+  @extend %main-text;
+
+  color: fn.get-color("dark");
+  background-color: fn.get-color("light-primary");
+}
