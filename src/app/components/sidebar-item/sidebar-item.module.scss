@@ -1,0 +1,12 @@
+@use '../../styles/utils/functions' as fn;
+@use '../../styles/utils/variables' as var;
+@use '../../styles/utils/placeholders' as *;
+@use '../../styles/utils/mixins' as mx;
+
+.link {
+  @include mx.flex-center;
+
+  @extend %button-link-text;
+
+  gap: 14px;
+}

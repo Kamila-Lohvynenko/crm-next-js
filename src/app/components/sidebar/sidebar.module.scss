@@ -1,0 +1,41 @@
+@use '../../styles/utils/functions' as fn;
+@use '../../styles/utils/variables' as var;
+@use '../../styles/utils/placeholders' as *;
+@use '../../styles/utils/mixins' as mx;
+
+.aside {
+  @extend %button-link-text;
+
+  position: relative;
+
+  height: 100vh;
+  padding: 132px 32px 16px;
+
+  background-color: fn.get-color('dark');
+  color: fn.get-color('light-primary');
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+}
+
+.image {
+  position: absolute;
+  top: 32px;
+  left: 60px;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.button {
+  @include mx.flex-center;
+
+  gap: 8px;
+}
